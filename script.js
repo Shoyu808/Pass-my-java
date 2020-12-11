@@ -24,14 +24,21 @@ function generatePassword() {
 
     var reqChar = 0;
     
-  // Create a conditional to make sure that the user has chosen at least one type of character
+  // TODO: Create if else statements that checks if the user said yes or no to different confirms that we asked them, and base on their response push those specific characters to our empty array
     var letCap = confirm("Do you want Captial letters?");
     if(letCap) {
       (userChoice += letCap)
+      console.log("userChoice: ", userChoice += letCap)
     }
-    
+
+    var letLow = confirm("Do you want Captial letters?");
+    if(letLow) {
+      (userChoice += letLow)
+      console.log("userChoice: ", userChoice += letLow);
+    }
+
   
-  // TODO: Create if else statements that checks if the user said yes or no to different confirms that we asked them, and base on their response push those specific characters to our empty array
+  //TODO: Create prompt asking how many characters they want in there password
   
   //TODO: Create a var to hold the final results
 
