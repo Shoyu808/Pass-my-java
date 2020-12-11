@@ -57,31 +57,24 @@ function generatePassword() {
     else if(reqChar>= 8 || reqChar< 128) {
       alert("Gimme a second and I'll make your Password!")
     }
-  
+  //  var randomNum = Math.floor(Math.random() = length of final array)
+  // inside the forr loop ( finalPass = finalPass + fillanArray[randomNum])
   //Function to generate random password
     function getRandom(array){
       var randomIndex = Math.floor (Math.random()*array.length);
       var randomElement = array[randomIndex];
       return randomElement;
     }
-
+    //  I need a "for loop" to loop over my final array, it should run base on the results of the prompt when we asked user how many characters they want in their password to be, choose randomly from our final array that holds all the character that the user wantd, and save them to our finalPass variable
     // for loop to generate Users choice of password
     for (var i =0; i<reqChar; i++){
+      // Create a var to hold the final results
       var ranPass = getRandom(userChoice)
       userPass.push(ranPass);
     }
     console.log(userPass.join(""))
-  //TODO: Create a var to hold the final results
-  var finalPass;
-
-  // TODO: I need a "for loop" to loop over my final array, it should run base on the results of the prompt when we asked user how many characters they want in their password to be, choose randomly from our final array that holds all the character that the user wantd, and save them to our finalPass variable
-
-  //  var randomNum = Math.floor(Math.random() = length of final array)
-  // inside the forr loop ( finalPass = finalPass + fillanArray[randomNum])
-
-  // TODO: Return the finalPass from this function outside of the for loop at the end of this function
-
-
+    // Return the finalPass from this function outside of the for loop at the end of this function
+    return userPass.join("");
 
 }
 
