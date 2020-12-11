@@ -64,6 +64,13 @@ function generatePassword() {
       var randomElement = array[randomIndex];
       return randomElement;
     }
+
+    // for loop to generate Users choice of password
+    for (var i =0; i<reqChar; i++){
+      var ranPass = getRandom(userChoice)
+      userPass.push(ranPass);
+    }
+    console.log(userPass.join(""))
   //TODO: Create a var to hold the final results
   var finalPass;
 
