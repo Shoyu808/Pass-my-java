@@ -21,7 +21,7 @@ function generatePassword() {
     var letLow = ["abcdefghijklmnopqrstuvwxyz"];
     var letNum = ["0123456789"];
     var letChar = ["!@#$%^&*()"];
-
+    // for prompt
     var reqChar = 0;
     
   // Create if else statements that checks if the user said yes or no to different confirms that we asked them, and base on their response push those specific characters to our empty array
@@ -53,6 +53,9 @@ function generatePassword() {
     var reqChar = prompt("Please choose from at least 8 to no more than 128 characters for your password.");
     if(reqChar>=8 || reqChar<128){
       alert("You need to pick at least 8 to no more than 128 charaters!")
+    }
+    else if {
+      alert("Gimme a second and I'll make your Password!")
     }
   
   //TODO: Create a var to hold the final results
