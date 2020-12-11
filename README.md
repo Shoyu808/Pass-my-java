@@ -14,4 +14,28 @@ I'll show you how I can pass on my java to you. Make sure to have a terminal emu
 
 This is the image of my javascript file.
 
-![image-of-java-file](https://lh3.googleusercontent.com/JhjHmkzenai1RSu1LLC2njyTAe6Hi-ux_ZslcS_zlB9KSW7KXeF_28SgJOV_v_I56QbX=s103)
+![image-of-java-file](https://github.com/Shoyu808/Pass-my-java/blob/main/images/Screenshot%20(16).png?raw=true)
+
+As you can see in the image I have describe how my javascript works with comments on it. Like how that function works on line 12. So what's happening in line 12 is a function that generates the password. What I needed inside of the function to work are my variables with the user choices of the password and also for the characters. Then I created 4 *confirms* to ask the user how they want their password. I created a *prompt* to ask the user how many characters they would want in their password. You could take a look at my script file if you want to learn how to generate a password.
+
+## *Credits*
+
+I would like to thank
+
+* [Javascript](https://www.javascript.com/)
+
+* [MDN web docs](https://developer.mozilla.org/en-US/)
+
+* [shields.io](https://shields.io/)
+
+* [Aslangh67](https://github.com/Aslangh67/PaswordGen-PseudoCode)
+
+* [Zoom](https://zoom.us/)
+
+* [My Github](https://github.com/Shoyu808)
+
+## *License*
+
+Copyright (C) 2020 Free Software Foundation, Inc.
+
+Licensed under the GNU license.

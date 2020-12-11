@@ -44,6 +44,7 @@ function generatePassword() {
     console.log("userChoice: ", (userChoice += letChar));
   }
   // Create prompt asking how many characters they want in there password
+  // this is also a *while* loop where the alert will only pop up if you don't meet the requirments.
   while (reqChar < 8 || reqChar > 128) {
     var reqChar = prompt(
       "Please choose from at least 8 to no more than 128 characters for your password."
