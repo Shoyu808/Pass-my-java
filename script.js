@@ -3,19 +3,19 @@ var generateBtn = document.querySelector("#generate");
 
 
 // Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+// function writePassword() {
+//   var password = generatePassword();
+//   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
-}
+//   passwordText.value = password;
+// }
 
 // Create a generatePassword function and write all the logic within this function
 function generatePassword() {
 
    // Create an empty array to hold user requested characters
-    var userPass = [""];
-    var userChoice = [""];
+    var userPass = [];
+    var userChoice = [];
     // Create an array of CAP letters, lower letters, nums, and special characters
     var letCap = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
     var letLow = ["abcdefghijklmnopqrstuvwxyz"];
@@ -24,49 +24,58 @@ function generatePassword() {
     // for prompt
     var reqChar = 0;
     
+    
   // Create if else statements that checks if the user said yes or no to different confirms that we asked them, and base on their response push those specific characters to our empty array
-    var letCap = confirm("Do you want Captial letters in your password?");
-    if(letCap) {
+    var capLet = confirm("Do you want Captial letters in your password?");
+    if(capLet) {
       (userChoice += letCap)
       console.log("userChoice: ", userChoice += letCap)
     }
 
-    var letLow = confirm("Do you want Lower Case letters in your password?");
-    if(letLow) {
+    var lowLet = confirm("Do you want Lower Case letters in your password?");
+    if(lowLet) {
       (userChoice += letLow)
       console.log("userChoice: ", userChoice += letLow);
     }
 
-    var letNum = confirm("Do you want numbers in your password?");
-    if(letNum) {
+    var numChar = confirm("Do you want numbers in your password?");
+    if(numChar) {
       (userChoice += letNum)
       console.log("userChoice: ", userChoice += letNum);
     }
 
-    var letChar = confirm("And last would you want Special Characters in your password?")
-    if(letChar) {
+    var speChar = confirm("And last would you want Special Characters in your password?")
+    if(speChar) {
       (userChoice += letChar)
       console.log("userChoice: ", userChoice += letChar);
     }
+    // for prompt
+    // var reqChar = 0;
 
   // Create prompt asking how many characters they want in there password
-    while (reqChar< 8 || reqChar> 128){
+    while (reqChar < 8 || reqChar > 128){
       var reqChar = prompt("Please choose from at least 8 to no more than 128 characters for your password.");
-      if(reqChar< 8 || reqChar> 128){
+      if(reqChar < 8 || reqChar > 128){
         alert("You need to pick at least 8 to no more than 128 charaters!")
       }
     }
+ 
   //  var randomNum = Math.floor(Math.random() = length of final array)
   // inside the forr loop ( finalPass = finalPass + fillanArray[randomNum])
   //Function to generate random password
-    function getRandom(array){
-      var randomIndex = Math.floor (Math.random()*array.length);
-      var randomElement = array[randomIndex];
-      return randomElement;
-    }
+    // function getRandom(array){
+    //   var randomIndex = Math.floor (Math.random()*array.length);
+    //   var randomElement = array[randomIndex];
+    //   return randomElement;
+    // }
     //  I need a "for loop" to loop over my final array, it should run base on the results of the prompt when we asked user how many characters they want in their password to be, choose randomly from our final array that holds all the character that the user wantd, and save them to our finalPass variable
     // for loop to generate Users choice of password
     for (var i =0; i<reqChar; i++){
+      function getRandom(array){
+        var randomIndex = Math.floor (Math.random()*array.length);
+        var randomElement = array[randomIndex];
+        return randomElement;
+      }
       // Create a var to hold the final results
       var ranPass = getRandom(userChoice)
       userPass.push(ranPass);
@@ -75,6 +84,13 @@ function generatePassword() {
     // Return the finalPass from this function outside of the for loop at the end of this function
     return userPass.join("");
 
+}
+
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+
+  passwordText.value = password;
 }
 
 
