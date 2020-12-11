@@ -43,6 +43,12 @@ function generatePassword() {
       console.log("userChoice: ", userChoice += letNum);
     }
 
+    var letChar = confirm("And last would you want Special Characters in your password?")
+    if(letChar) {
+      (userChoice += letChar)
+      console.log("userChoice: ", userChoice += letChar);
+    }
+
   
   //TODO: Create prompt asking how many characters they want in there password
   
