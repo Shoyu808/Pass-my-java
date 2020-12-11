@@ -51,10 +51,10 @@ function generatePassword() {
 
   //TODO: Create prompt asking how many characters they want in there password
     var reqChar = prompt("Please choose from at least 8 to no more than 128 characters for your password.");
-    if(reqChar>=8 || reqChar<128){
+    if(reqChar< 8 || reqChar> 128){
       alert("You need to pick at least 8 to no more than 128 charaters!")
     }
-    else if {
+    else if(reqChar>= 8 || reqChar< 128) {
       alert("Gimme a second and I'll make your Password!")
     }
   
