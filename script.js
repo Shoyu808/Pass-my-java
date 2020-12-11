@@ -25,16 +25,22 @@ function generatePassword() {
     var reqChar = 0;
     
   // TODO: Create if else statements that checks if the user said yes or no to different confirms that we asked them, and base on their response push those specific characters to our empty array
-    var letCap = confirm("Do you want Captial letters?");
+    var letCap = confirm("Do you want Captial letters in your password?");
     if(letCap) {
       (userChoice += letCap)
       console.log("userChoice: ", userChoice += letCap)
     }
 
-    var letLow = confirm("Do you want Captial letters?");
+    var letLow = confirm("Do you want Lower Case letters in your password?");
     if(letLow) {
       (userChoice += letLow)
       console.log("userChoice: ", userChoice += letLow);
+    }
+
+    var letNum = confirm("Do you want numbers in your password?");
+    if(letNum) {
+      (userChoice += letNum)
+      console.log("userChoice: ", userChoice += letNum);
     }
 
   
