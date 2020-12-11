@@ -12,3 +12,6 @@ I'll show you how I can pass on my java to you. Make sure to have a terminal emu
 
 ## *Usage on Javascript*
 
+This is the image of my javascript file.
+
+![image-of-java-file](https://lh3.googleusercontent.com/JhjHmkzenai1RSu1LLC2njyTAe6Hi-ux_ZslcS_zlB9KSW7KXeF_28SgJOV_v_I56QbX=s103)
