@@ -24,7 +24,7 @@ function generatePassword() {
 
     var reqChar = 0;
     
-  // TODO: Create if else statements that checks if the user said yes or no to different confirms that we asked them, and base on their response push those specific characters to our empty array
+  // Create if else statements that checks if the user said yes or no to different confirms that we asked them, and base on their response push those specific characters to our empty array
     var letCap = confirm("Do you want Captial letters in your password?");
     if(letCap) {
       (userChoice += letCap)
@@ -49,8 +49,11 @@ function generatePassword() {
       console.log("userChoice: ", userChoice += letChar);
     }
 
-  
   //TODO: Create prompt asking how many characters they want in there password
+    var reqChar = prompt("Please choose from at least 8 to no more than 128 characters for your password.");
+    if(reqChar>=8 || reqChar<128){
+      alert("You need to pick at least 8 to no more than 128 charaters!")
+    }
   
   //TODO: Create a var to hold the final results
 
